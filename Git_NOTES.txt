@@ -1,0 +1,39 @@
+﻿Скачиваем с офф-сайта
+Устанавливаем ничего не меняя
+Для систем Windows открываем консоль Git Bush
+
+Единоразово нужно настроить программу
+git config --global user.name "Serj Volkov"  				- мое имя для других соработников
+git config --global user.email "serjvolk222@gmail.com"		- мой email для других 
+
+
+Консольные команды:
+cd d:/PROGRAMMING/NODE_JS/git								- перейти в указанную директорию
+git init													- создать git - репозиторий
+git status                          						- показывает состояние файлов
+git add .               									- проиндексировать все файлы в папке
+git rm --cached Git_NOTES.txt								- удалить файл из индексации
+git commit -m "first commit"                                - закомитить (создать слепок) файлы
+git commit -a -m "first commit"                             - проиндексировать и закомитить (создать слепок) файлы
+git checkout -- LICENSE.php									- Откат состояния файла до последней индексации
+git remote add origin https://github.com/serjvolk/site.git  - подключиться к директории
+git push -u origin master									- выгрузить файлы
+git log 													- показать список комитов (Клавиша Q, чтобы выйти из логов)
+git log -2 													- показать последние два коммита 
+
+	Ветки:
+git checkout -b new-f										- создать ветку new-f и перейти в нее
+git checkout master											- перейти в ветку master
+git branch new-f2											- создать ветку new-f2
+git branch													- показать список веток
+git branch -v 												- показать список веток и их последние в коммиты 
+
+
+git clone https://github.com/jquery/jquery.git				- клонировать репозиторий
+
+
+Для игнорирования файлов нужно в корне создать файл .gitignore и в него ввести что игнорировать
+!!! Коммитятся только проиндексированные файлы
+
+
+
